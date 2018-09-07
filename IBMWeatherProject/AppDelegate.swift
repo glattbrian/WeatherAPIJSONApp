@@ -15,6 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        screenWidth=UIScreen.main.bounds.size.width;
+        screenHeight=UIScreen.main.bounds.size.height;
+        lineScaleX=screenWidth/320;
+        lineScaleY=screenHeight/480;
+        keyboardScrollBuffer=5*lineScaleY;
+
         // Override point for customization after application launch.
         return true
     }
